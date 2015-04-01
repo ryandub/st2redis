@@ -1,0 +1,7 @@
+---
+name: list_keys
+runner_type: run-python
+description: List keys in Redis database
+enabled: true
+entry_point: list_keys.py
+parameters: {}

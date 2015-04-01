@@ -1,0 +1,11 @@
+---
+name: smembers
+runner_type: run-python
+description: SMEMBERS a key in Redis database
+enabled: true
+entry_point: smembers.py
+parameters:
+  key:
+    type: string
+    description: Redis key to SMEMBERS
+    required: true

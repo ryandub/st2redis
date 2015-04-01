@@ -1,0 +1,15 @@
+---
+name: sadd
+runner_type: run-python
+description: SADD a key in Redis database
+enabled: true
+entry_point: sadd.py
+parameters:
+  key:
+    type: string
+    description: Redis key to SADD
+    required: true
+  value:
+    type: string
+    description: Value to add to set
+    required: true

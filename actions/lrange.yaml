@@ -1,0 +1,19 @@
+---
+name: lrange
+runner_type: run-python
+description: LRANGE a key in Redis database
+enabled: true
+entry_point: lrange.py
+parameters:
+  key:
+    type: string
+    description: Redis key to lrange
+    required: true
+  start:
+    type: integer
+    description: Beginning of range
+    default: 0
+  end:
+    type: integer
+    description: End of range
+    default: -1

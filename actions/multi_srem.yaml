@@ -1,0 +1,15 @@
+---
+name: multi_srem
+runner_type: run-python
+description: SREM a list of valus from a key in Redis database
+enabled: true
+entry_point: multi_srem.py
+parameters:
+  key:
+    type: string
+    description: Redis key to SREM
+    required: true
+  values:
+    type: string
+    description: Values to remove
+    required: true

@@ -1,0 +1,15 @@
+---
+name: srem
+runner_type: run-python
+description: SREM a key in Redis database
+enabled: true
+entry_point: srem.py
+parameters:
+  key:
+    type: string
+    description: Redis key to SREM
+    required: true
+  value:
+    type: string
+    description: Value to remove
+    required: true
